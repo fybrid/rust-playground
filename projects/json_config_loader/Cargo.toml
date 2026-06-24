@@ -1,0 +1,17 @@
+[package]
+name = "json_config_loader"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "json_config_loader"
+path = "src/main.rs"
+

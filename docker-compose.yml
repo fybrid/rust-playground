@@ -1,0 +1,18 @@
+services:
+  rust-learning:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:cached
+      - cargo-cache:/usr/local/cargo/registry
+      - target-cache:/workspace/target
+    command: bash
+    stdin_open: true
+    tty: true
+
+volumes:
+  cargo-cache:
+  target-cache:
+

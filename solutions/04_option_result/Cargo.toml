@@ -1,0 +1,9 @@
+[package]
+name = "solution_04_option_result"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+

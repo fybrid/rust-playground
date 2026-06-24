@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "projects/cli_calculator",
+    "projects/file_word_count",
+    "projects/mini_grep",
+    "projects/todo_cli",
+    "projects/json_config_loader",
+]
+default-members = [
+    "projects/cli_calculator",
+    "projects/file_word_count",
+    "projects/mini_grep",
+    "projects/todo_cli",
+    "projects/json_config_loader",
+]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+publish = false
+
